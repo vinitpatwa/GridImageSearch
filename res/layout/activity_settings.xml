@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity" >
+
+    <TextView
+        android:id="@+id/tv_settings_advance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/tv_settings_advance_label"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+        <TextView
+        android:id="@+id/tv_settings_image_size"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_settings_advance_label"
+        android:text="@string/tv_settings_image_size"
+
+		 />
+
+        <EditText
+            android:id="@+id/et_settings_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_settings_image_size"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_settings_image_size"
+            android:hint="@string/et_settings_advance_hint"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+        
+                <TextView
+        android:id="@+id/tv_settings_color_filter"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_settings_image_size"
+        android:text="@string/tv_settings_color_filter"
+
+		 />
+
+        <EditText
+            android:id="@+id/et_settings_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_settings_color_filter"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_settings_color_filter"
+            android:hint="@string/et_settings_color_hint"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                        <TextView
+        android:id="@+id/tv_settings_image_type"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_settings_color_filter"
+        android:text="@string/tv_settings_image_type"
+
+		 />
+
+        <EditText
+            android:id="@+id/et_settings_image_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_settings_image_type"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_settings_image_type"
+            android:hint="@string/et_settings_image_type_hint"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+        
+
+        
+                                <TextView
+        android:id="@+id/tv_settings_site_filter"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_settings_image_type"
+        android:text="@string/tv_settings_site_filter"
+
+		 />
+
+        <EditText
+            android:id="@+id/et_settings_site_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_settings_site_filter"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/tv_settings_site_filter"
+            android:hint="@string/et_settings_site_hint"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_settings_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_settings_site_filter"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/bt_settings_save" 
+            android:onClick="onSave"/>
+    
+</RelativeLayout>
